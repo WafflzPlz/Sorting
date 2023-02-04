@@ -7,8 +7,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] test1 = {3,6,4,-2,23,1,64,-33,4,800,32,-2000,0,0,432,5,5893,7};
-        int[] test2 = {3,6,4,-2,23,1,64,-33,6,78,7965,-22,-346,54,57836,33,24,800,32,-2000,0,0,432,5,5893,7};
+        int[] test1 = {3, 6, 4, -2, 23, 1, 64, -33, 4, 800, 32, -2000, 0, 0, 432, 5, 5893, 7};
+        int[] test2 = {3, 6, 4, -2, 23, 1, 64, -33, 6, 78, 7965, -22, -346, 54, 57836, 33, 24, 800, 32, -2000, 0, 0, 432, 5, 5893, 7};
 
         int[] test3 = new int[100000];
         for (int i = 0; i < test3.length; i++) {
@@ -20,6 +20,7 @@ public class Main {
             test4[i] = (int) (Math.random() * 100000);
         }
 
+/*
         SortAlg.insertionSort(test1);
         print(test1);
 
@@ -35,7 +36,8 @@ public class Main {
 
         System.out.println();
 
-        SortAlg.insertionSort(test4);
+*/
+        SortAlg.mergeSort(test4);
         print(test4);
     }
 }
